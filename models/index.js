@@ -14,7 +14,7 @@ fs.readdirSync(__dirname).filter(file => {
 // 각 테이블의 관계설정 initialize
 Object.keys(db).forEach(name => { if(db[name].associate) db[name].associate(db) })
 
-// 관계설정
+// 관계설정 - 손댈부분
 db.User.hasMany(db.Board)
 db.Board.belongsTo(db.User)
 

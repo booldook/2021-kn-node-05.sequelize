@@ -9,7 +9,10 @@ const Board = (sequelize, Sequelize) => {
 		},
 		content: {
 			type: Sequelize.TEXT(),
-		}
+		}/* ,
+		age: {
+			type: Sequelize.INTEGER.UNSIGNED.ZEROFILL
+		} */
 	}, {
 		timestamps: true,
 		charset: 'utf8',
